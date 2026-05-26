@@ -1,10 +1,10 @@
-# 🏠 Resa - Property Rental Discovery App
+# 🏠 Resa - Property Finder App
 
 <div align="center">
 
 ![Resa Logo](./assets/images/resalogo.png)
 
-**A modern React Native property rental app with interactive maps, advanced search, and seamless authentication**
+**A modern React Native property discovery app with advanced search, interactive maps, and property listing features**
 
 [![Expo](https://img.shields.io/badge/Expo-000?style=for-the-badge&logo=expo&logoColor=fff)](https://expo.dev)
 [![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev)
@@ -34,45 +34,58 @@
 
 ## 📱 Overview
 
-**Resa** is a feature-rich property rental discovery mobile application built with React Native and Expo. It enables users to browse, search, and save property listings with an intuitive interface powered by interactive maps, real-time filtering, and secure authentication.
+**Resa** is a feature-rich property discovery mobile application built with React Native and Expo. It enables users to search, browse, and discover property listings with an intuitive interface powered by advanced filters, interactive maps, secure authentication, and the ability to create and manage property listings.
 
-Perfect for property hunters looking for apartments, houses, villas, and studios in a seamless mobile experience.
+Perfect for property hunters and listers looking to discover apartments, houses, villas, and studios in a seamless mobile experience.
 
 ---
 
 ## ✨ Features
 
-### 🔍 **Smart Property Discovery**
+### 🔍 **Advanced Property Search**
 - Browse featured and recommended properties
-- Advanced search with multiple filters
-- Filter by property type (apartment, house, villa, studio)
-- Real-time property listing updates
+- Powerful search with keyword and location filtering
+- Advanced filters: property type, bedrooms, bathrooms, price range
+- Real-time search results
+- Sort and organize listings
 
-### 🗺️ **Interactive Maps**
-- Full-screen map view for property locations
-- Tap to view property details directly on map
-- Location-based property discovery
+### 🏠 **Property Listing**
+- Create and publish new property listings
+- Add property details: title, description, price, type, dimensions
+- Upload multiple images
+- Specify location with coordinates
+- Mark properties as featured
 
 ### 💾 **Save & Manage**
-- Save favorite properties for later
-- Quick access to saved listings
+- Save favorite properties for later reference
+- View all saved listings in one place
+- Quick access to your collection
 - One-tap property management
+
+### 🗺️ **Location-Based Discovery**
+- Full-screen interactive map view
+- View properties by location
+- Integrated location services
+- See property coordinates on maps
 
 ### 🔐 **Secure Authentication**
 - Clerk authentication integration
 - Secure user session management
 - Profile management
+- User verification
 
 ### 🎯 **User Experience**
 - Responsive design with NativeWind (Tailwind CSS)
 - Smooth navigation with Expo Router
-- Bottom tab navigation for easy access
+- Bottom tab navigation (Home, Search, Create, Saved, Profile)
 - Dark mode support
+- Fast and smooth performance
 
-### 📸 **Rich Content**
+### 📸 **Rich Property Details**
 - High-quality property images
-- Image preview and gallery functionality
-- Fast image loading with Expo Image
+- Comprehensive property information
+- Amenity details
+- Chat functionality
 
 ---
 
@@ -392,7 +405,6 @@ Contributions are welcome! Please follow these steps:
 - Test changes before submitting PR
 - Update documentation as needed
 
----
 
 ## 📄 License
 
