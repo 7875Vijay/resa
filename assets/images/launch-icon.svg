@@ -1,0 +1,41 @@
+<svg viewBox="0 0 1280 1280" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient effect -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E6F4FE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B3D9FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1280" height="1280" fill="url(#bgGradient)" rx="280"/>
+  
+  <!-- Large house icon in center -->
+  <g transform="translate(640, 640)">
+    <!-- Roof -->
+    <path d="M -300 0 L 0 -250 L 300 0" stroke="#0066CC" stroke-width="30" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- House body -->
+    <rect x="-280" y="0" width="560" height="320" fill="none" stroke="#0066CC" stroke-width="30" rx="20"/>
+    
+    <!-- Door -->
+    <rect x="-100" y="80" width="200" height="240" fill="#0066CC" rx="15" opacity="0.7"/>
+    <circle cx="80" cy="200" r="20" fill="#E6F4FE"/>
+    
+    <!-- Windows -->
+    <g stroke="#0066CC" stroke-width="20" fill="none">
+      <!-- Left window -->
+      <rect x="-220" y="50" width="80" height="80" rx="8"/>
+      <line x1="-180" y1="50" x2="-180" y2="130"/>
+      <line x1="-220" y1="90" x2="-140" y2="90"/>
+      
+      <!-- Right window -->
+      <rect x="140" y="50" width="80" height="80" rx="8"/>
+      <line x1="180" y1="50" x2="180" y2="130"/>
+      <line x1="140" y1="90" x2="220" y2="90"/>
+    </g>
+    
+    <!-- Accent element -->
+    <circle cx="-220" cy="-300" r="80" fill="#FF6B35" opacity="0.3"/>
+    <circle cx="220" cy="-280" r="60" fill="#00A8E8" opacity="0.2"/>
+  </g>
+</svg>

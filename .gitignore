@@ -1,53 +1,216 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
+# ============================================================================
+# Dependencies
+# ============================================================================
 node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.pnp
+.pnp.js
 
-# Expo
+# ============================================================================
+# Expo & Build
+# ============================================================================
 .expo/
+.expo-shared/
 dist/
 web-build/
-expo-env.d.ts
+eas.json
+*.eas.json
+build/
 
-# Native
-.kotlin/
-*.orig.*
+# ============================================================================
+# iOS & Android Build Files
+# ============================================================================
+ios/Pods/
+ios/Podfile.lock
+ios/.symlinks/
+ios/.generated/
+ios/Flutter/Flutter.podspec
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.xcframework
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace/xcuserdata/
+xcuserdata/
+*.xcworkspace
+.gradle/
+.idea/
+local.properties
 *.jks
+*.keystore
+build/
+android/local.properties
+android/.gradle
+android/app/debug
+android/app/release
+
+# ============================================================================
+# Native Build Files
+# ============================================================================
+.kotlin/
+.cxx/
+*.orig.*
 *.p8
 *.p12
 *.key
 *.mobileprovision
+*.provisionprofile
+*.cer
+*.p7b
+*.pfx
 
-# Metro
+# ============================================================================
+# Metro Bundler
+# ============================================================================
 .metro-health-check*
+.haste-cache/
+.haste/
 
-# debug
+# ============================================================================
+# Debugging & Logs
+# ============================================================================
 npm-debug.*
 yarn-debug.*
 yarn-error.*
-
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env
-.env*.local
+lerna-debug.log
+.env.local
 .env.*.local
+.env.production.local
+.env.development.local
+.env.test.local
 
-# typescript
-*.tsbuildinfo
+# Logs
+logs
+*.log
+*.logs
+log.txt
+debug.log
+.DS_Store
 
-# IDE
+# ============================================================================
+# macOS
+# ============================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.env.macos
+
+# ============================================================================
+# IDE & Editor
+# ============================================================================
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
 *.swp
 *.swo
 *~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.env.editor
+.IntelliJIdea*/
+.atom/
+.buildlog
+.history
+.svn/
+.vscode-test/
+.cache
+.eslintcache
 
-# Logs
-*.log
-npm-debug.log*
+# ============================================================================
+# Certificates & Sensitive Files
+# ============================================================================
+*.pem
+*.cert
+*.crt
+*.key
+*.private
+secrets.json
+.env
+.env.local
+.env.*.local
+*.p12
+*.p7b
+
+# ============================================================================
+# OS Specific
+# ============================================================================
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.Spotlight-V100
+.Trashes
+
+# ============================================================================
+# TypeScript & Transpilation
+# ============================================================================
+*.tsbuildinfo
+dist/
+out/
+build/
+*.js.map
+*.tsx.map
+
+# ============================================================================
+# Runtime & Temporary Files
+# ============================================================================
+*.pid
+*.seed
+*.pid.lock
+.npm
+.yarn-integrity
+npm-shrinkwrap.json
+.env.test
+
+# ============================================================================
+# EAS Build
+# ============================================================================
+.easrc
+eas-build-job-*
+.eas
+
+# ============================================================================
+# Expo CLI
+# ============================================================================
+.expo-shared/
+web-build/
+
+# ============================================================================
+# Optional - Platform Specific Temporary Files
+# ============================================================================
+.expo-status/
+app-example/
+coverage/
+.nyc_output/
+
+# ============================================================================
+# Environment
+# ============================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ============================================================================
+# Package Manager Lock Files (Optional - Uncomment if needed)
+# ============================================================================
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*

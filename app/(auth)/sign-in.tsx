@@ -12,6 +12,7 @@ const SignIn = () => {
     const [password, setPassword] = useState('');
     const [code, setCode] = useState("");
     const [verificationError, setVerificationError] = useState('');
+    const [showVerification, setShowVerification] = useState(false);
 
     const isLoading = fetchStatus === "fetching";
 
@@ -25,7 +26,7 @@ const SignIn = () => {
 
     const onSignInPressed = async (e: GestureResponderEvent) => {
         e.preventDefault();
-        if (!signIn) return;
+        //if (!signIn) return;
         const { error } = await signIn.password({
             emailAddress: email,
             password: password
@@ -49,9 +50,11 @@ const SignIn = () => {
             });
         }
         else if(signIn.status === "needs_second_factor"){
+            setShowVerification(true);  // ← Add this
             signIn.mfa.sendPhoneCode();
         }
         else if(signIn.status === "needs_client_trust"){
+            setShowVerification(true);  // ← Add this
             const emailCodeFactor = signIn.supportedSecondFactors.find(
                 (factor) => factor.strategy === "email_code"
             );
@@ -102,12 +105,8 @@ const SignIn = () => {
         await signIn.mfa.sendEmailCode();
     }
 
-    if (signIn && signIn.status === "needs_client_trust") {
+    if (showVerification) {
         return (
-            <KeyboardAvoidingView
-                behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-                className="flex-1"
-            >
                 <ScrollView
                     contentContainerStyle={{ flexGrow: 1, paddingBottom: 100 }}
                     keyboardShouldPersistTaps="handled"
@@ -158,7 +157,6 @@ const SignIn = () => {
                         </TouchableOpacity>
                     </View>
                 </ScrollView>
-            </KeyboardAvoidingView>
         );
     }
 
@@ -166,11 +164,10 @@ const SignIn = () => {
         <ScrollView
             contentContainerStyle={{ flexGrow: 1 }}
             keyboardShouldPersistTaps="handled"
-            scrollEnabled={true}>
-            <KeyboardAvoidingView
-                behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-                className="flex-1"
+            scrollEnabled={true}
+            className='bg-white'
             >
+            
                 <View className='flex-1 px-6 py-12'>
                     <Image source={require("../../assets/images/resalogo.png")}
                         className='w-40 h-20 mb-8'
@@ -203,7 +200,8 @@ const SignIn = () => {
                         onChangeText={setPassword}
                         secureTextEntry={true}
                     />
-                    {errors.fields.password && (
+                    {
+                      errors.fields.password && (
                         <Text className="text-red-500 mb-4">
                             {errors.fields.password.message}
                         </Text>
@@ -225,7 +223,6 @@ const SignIn = () => {
                     </View>
                     <View nativeID='clerk-captcha' />
                 </View>
-            </KeyboardAvoidingView>
         </ScrollView>
     )
 }

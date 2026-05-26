@@ -1,0 +1,28 @@
+<svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="192" height="192" fill="#E6F4FE" rx="45"/>
+  
+  <!-- House outline -->
+  <g transform="translate(96, 96)">
+    <!-- Roof -->
+    <path d="M -50 0 L 0 -40 L 50 0" stroke="#0066CC" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- House body -->
+    <rect x="-45" y="0" width="90" height="50" fill="none" stroke="#0066CC" stroke-width="3" rx="3"/>
+    
+    <!-- Door -->
+    <rect x="-15" y="15" width="30" height="35" fill="#0066CC" rx="2" opacity="0.6"/>
+    <circle cx="12" cy="32" r="2" fill="#E6F4FE"/>
+    
+    <!-- Windows -->
+    <g stroke="#0066CC" stroke-width="2" fill="none">
+      <rect x="-35" y="8" width="12" height="12" rx="1"/>
+      <line x1="-29" y1="8" x2="-29" y2="20"/>
+      <line x1="-35" y1="14" x2="-23" y2="14"/>
+      
+      <rect x="23" y="8" width="12" height="12" rx="1"/>
+      <line x1="29" y1="8" x2="29" y2="20"/>
+      <line x1="23" y1="14" x2="35" y2="14"/>
+    </g>
+  </g>
+</svg>

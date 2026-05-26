@@ -63,14 +63,11 @@ const SignUp = () => {
 
     if (signUp.status === "missing_requirements" && signUp.unverifiedFields.includes('email_address') && signUp.missingFields.length === 0) {
         return (
-            <KeyboardAvoidingView
-                behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-                className="flex-1"
-            >
                 <ScrollView
                     contentContainerStyle={{ flexGrow: 1, paddingBottom: 100 }}
                     keyboardShouldPersistTaps="handled"
                     scrollIndicatorInsets={{ right: 1 }}
+                    className='bg-white'
                 >
                     <View className='px-6 py-12'>
                         <Image source={require("../../assets/images/resalogo.png")}
@@ -112,7 +109,6 @@ const SignUp = () => {
                         </TouchableOpacity>
                     </View>
                 </ScrollView>
-            </KeyboardAvoidingView>
         );
     }
 
@@ -121,10 +117,8 @@ const SignUp = () => {
         <ScrollView
             contentContainerStyle={{ flexGrow: 1 }}
             keyboardShouldPersistTaps="handled"
-            scrollEnabled={true}>
-            <KeyboardAvoidingView
-                behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-                className="flex-1"
+            scrollEnabled={true}
+            className='bg-white'
             >
                 <View className='flex-1 px-6 py-12'>
                     <Image source={require("../../assets/images/resalogo.png")}
@@ -200,7 +194,6 @@ const SignUp = () => {
                     </View>
                     <View nativeID='clerk-captcha' />
                 </View>
-            </KeyboardAvoidingView>
         </ScrollView>
 
     )
