@@ -1,10 +1,10 @@
-# 🏠 Resa - Property Finder App
+# 🏠 Resa - Real Estate Search App
 
 <div align="center">
 
 ![Resa Logo](./assets/images/resalogo.png)
 
-**A modern React Native property discovery app with advanced search, interactive maps, and property listing features**
+**A modern React Native real estate search app with advanced filtering, interactive maps, and property listing features**
 
 [![Expo](https://img.shields.io/badge/Expo-000?style=for-the-badge&logo=expo&logoColor=fff)](https://expo.dev)
 [![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev)
@@ -34,9 +34,9 @@
 
 ## 📱 Overview
 
-**Resa** is a feature-rich property discovery mobile application built with React Native and Expo. It enables users to search, browse, and discover property listings with an intuitive interface powered by advanced filters, interactive maps, secure authentication, and the ability to create and manage property listings.
+**Resa** (Real Estate Search App) is a feature-rich property discovery mobile application built with React Native and Expo. It enables users to search, browse, and discover real estate listings with an intuitive interface powered by advanced filters, interactive maps, secure authentication, and the ability to create and manage property listings.
 
-Perfect for property hunters and listers looking to discover apartments, houses, villas, and studios in a seamless mobile experience.
+Perfect for real estate enthusiasts, agents, and property hunters looking to discover apartments, houses, villas, and studios in a seamless mobile experience.
 
 ---
 
